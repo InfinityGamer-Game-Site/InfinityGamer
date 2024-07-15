@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png?v=4">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v=4">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png?v=4">
+<link rel="manifest" href="/assets/favicons/site.webmanifest?v=4">
+<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg?v=4" color="#149cea">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico?v=4">
+<meta name="apple-mobile-web-app-title" content="InfinityGamer">
+<meta name="application-name" content="InfinityGamer">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml?v=4">
+<meta name="theme-color" content="#149cea">
+
+    <title>InfinityGamer</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/games/display.css">
+  </head>
+  <body>
+    <iframe src="../assets/navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
+    <iframe id="gameFrame"></iframe>
+
+    <ul>
+      <li><a id="fullscreenButton" title="Fullscreen" onclick="fullscreen();"><span class="material-icon">fullscreen</span></a></li>
+      <li><a id="sourceButton" title="Open in source view" onclick="sourceView();"><span class="material-icon">token</span></a></li>
+    <li><a id="reloadButton" title="Reload game"><span class="material-icon">restart_alt</span></a></li>
+    <li><a id="shareButton" title="Share game"><span class="material-icon">share</span></a></li>
+    <li style="font-size: 200%; margin-right: 10px;">|</li>
+    <h3 id="gameName">NO GAME SELECTED!</h3>
+    <p id="warning">Broken games may work in source view. (<span class="material-icon">token</span>)</p>
+    </ul>
+    <p id="playtime">Play time: </p>
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/games/gameNames.js"></script>
+    <script src="../assets/js/games/display-fullscreen.js"></script>
+    <script src="../assets/js/games/display.js"></script>
+    
+    
+  </body>
+</html>

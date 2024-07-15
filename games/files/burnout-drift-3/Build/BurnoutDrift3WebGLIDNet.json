@@ -1,0 +1,14 @@
+{
+"companyName": "BoneCracker Games",
+"productName": "Burnout Drift 3",
+"dataUrl": "https://shadowgmes.github.io/gfiles/burnout-drift-3/Build/BurnoutDrift3WebGL(IDNet)-data.unityweb",
+"asmCodeUrl": "https://shadowgmes.github.io/gfiles/burnout-drift-3/Build/BurnoutDrift3WebGL(IDNet)-asm-code.unityweb",
+"asmMemoryUrl": "https://shadowgmes.github.io/gfiles/burnout-drift-3/Build/BurnoutDrift3WebGL(IDNet)-asm-memory.unityweb",
+"asmFrameworkUrl": "https://shadowgmes.github.io/gfiles/burnout-drift-3/Build/BurnoutDrift3WebGL(IDNet)-asm-framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}
