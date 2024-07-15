@@ -315,11 +315,11 @@ Small maintenance and cache fixing
 - Added updater page for people who have old cache
 - Typo fixes
 
-### v3 - Game stats
+## v3 - Game stats
 
 Added gameplay stats, and some small changes and bug fixes
 
-6/1/24 -  (Took break from 6/2 to 6/11 and 6/15 to 6/28 for summer vacation, and 6/30-7/9 because i kinda got bored of coding :O)
+6/1/24 - 7/14/24 (Took break from 6/2 to 6/11 and 6/15 to 6/28 for summer vacation, and 6/30-7/9 because i kinda got bored of coding :O)
 
 - Added minor compression to images in games, game images, and easter egg images
 - Deleted Infinity directory in images
@@ -335,3 +335,13 @@ Added gameplay stats, and some small changes and bug fixes
 - Added more games to categories
 - Updated cache delete to 30 days old, which will stay constant from now on
 - Updated the devlog
+
+### v3.1 - Readd removed games
+
+Readded removed games and moved to new repo
+
+6/15/24
+
+- Readded removed games due to LFS problems
+- Moved to new repo (not a fork of the game library)
+- Updated incorrect and missing info in changelog
