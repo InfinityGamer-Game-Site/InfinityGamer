@@ -1,0 +1,11 @@
+{
+    "name": "infinitygamer",
+    "version": "3",
+    "description": "A game site with hundreds of games, and much more! Static for easy deployment anywhere!",
+    "author": "InfinityLoop",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/InfinityGamer-Game-Site/InfinityGamer.git"
+    }
+}

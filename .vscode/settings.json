@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDragAndDrop": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".scss.min.css",
+            "savePath": "/assets/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/games/files/**",
+    ],
+    "discord.detailsIdling": "Idle",
+    "discord.detailsEditing": "Editing {file_name} in {workspace}"
+}

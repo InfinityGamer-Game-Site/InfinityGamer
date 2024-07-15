@@ -1,0 +1,19 @@
+pop-up {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    background-color: var(--accent-color-1);
+    outline: 2px outset var(--text-color);
+    font-size: 125%;
+}
+
+#embed-button {
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+
+#embed-button:hover {
+  transform: rotateX(15deg) rotateY(15deg);
+}

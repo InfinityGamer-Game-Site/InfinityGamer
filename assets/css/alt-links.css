@@ -1,0 +1,29 @@
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+  }
+  
+ ul li {
+    display: inline;
+  }
+  
+ ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+ ul li a:hover {
+    background-color: var(--accent-color-1);
+  }
+  

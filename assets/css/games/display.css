@@ -1,0 +1,73 @@
+#gameFrame {
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    border: none;
+}
+
+pop-up {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    background-color: var(--bg-color);
+    outline: 2px outset var(--text-color);
+    font-size: 150%;
+    padding: 10px;
+}
+
+pop-up button {
+  width: 200px;
+  height: 75px;
+}
+
+#noNVM, #fullBTN {
+  outline: 2px solid var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 -5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+ul li a:hover {
+  background-color: var(--accent-color-1);
+}
+
+#time {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 125%;
+}
+
+.settings-nav {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings-nav:hover {
+  transform: rotate(360deg);
+}
+
+#warning {
+  font-size: 75%;
+  margin-left: 10px;
+}

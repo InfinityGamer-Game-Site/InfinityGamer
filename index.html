@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png?v=4">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v=4">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png?v=4">
+<link rel="manifest" href="/assets/favicons/site.webmanifest?v=4">
+<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg?v=4" color="#149cea">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico?v=4">
+<meta name="apple-mobile-web-app-title" content="InfinityGamer">
+<meta name="application-name" content="InfinityGamer">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml?v=4">
+<meta name="theme-color" content="#149cea">
+
+    <title>InfinityGamer</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="manifest" href="/manifest.json">
+    <script src="assets/js/lib/glitch.js"></script>
+</head>
+<body>
+  <iframe src="assets/navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
+  <h1>InfinityGamer</h1>
+  <div class="container">
+      <p id="random-text">Loading...</p>
+  </div>
+  <br>
+  <h3>If you see someone has an older version of this site, (a good way to tell is if it has the old logo), tell them to go to <a href="updater.html">here.</a> It will update them to the newest version. A person who does this won't have to do it again.</h2>
+  <br>
+  <h3>InfinityGamer is going through some big changes right now, so some things have been changed.</h3>
+  <p>The prxxy viewer has been shut down due to security reasons.</p>
+  <p>The clock page has been shut down for maintenance.</p>
+  <h4>Sorry for any inconvenience! - InfinityLoop</h4>
+
+  <img src="assets/images/logo.png" alt="InfinityGamer Logo" width="100px"
+       height="auto" id="infinitylogo"/>
+  <br>
+  <button id="embed-button" style="width: 300px; height: 50px;">Open in about:blank</button>
+  <br><br><br>
+      <!-- Start of CuterCounter Code -->
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxpocxa&nd=6&style=10" border="0" alt="visitor counter"></a>
+ <br>
+ <p>Page views</p>
+ <!-- End of CuterCounter Code -->
+  <br>
+  
+  <p style="line-height: 200%; letter-spacing: 200%;"><b>Welcome to InfinityGamer!
+      Dive into a vast collection of over 380 games.</b> Whether you like action, adventure, puzzles, or strategy,
+      you'll find something to enjoy here.
+      <b>Are you ready to leave your class?</b> Use our clock page, with cool animated backgrounds, so you can count
+      down until you leave your least favorite class.
+      <b>Worried your school will block this site?</b> We have multiple alternate links to ensure uninterrupted
+      gaming, even if the site is blocked.
+      <b>Have a suggestion or want to request a new feature?</b> Tell us! Go to our feedback page and share your
+      thoughts to help us improve InfinityGamer.
+      <b>Customize your gaming experience with our settings page!</b> You can choose from 16 themes, select your
+      preferred font, and cloak your tabs for added privacy.
+      <b>We're always updating and refining InfinityGamer to provide you with the best gaming and browsing
+          experiences.
+          Join us at InfinityGamer and let the adventure begin!</b></p>
+
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/global.js"></script>
+  <script>
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/assets/js/service-worker.js?v=2')
+                  .then(registration => {
+                      console.log('Service Worker registered with scope:', registration.scope);
+                  })
+                  .catch(error => {
+                      console.error('Service Worker registration failed:', error);
+                  });
+          });
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+$color-themes: (
+  light: (
+    bg-color: #fff,
+    bg-transp-color: #ffffff80,
+    text-color: #000000,
+    accent-color-1: #007bff,
+    accent-color-2: #ff007b
+  ),
+  dark: (
+    bg-color: #000000,
+    bg-transp-color: #00000080,
+    text-color: #fff,
+    accent-color-1: #007bff,
+    accent-color-2: #ff007b
+  ),
+  oceanic: (
+    bg-color: #015ab9,
+    bg-transp-color: #015ab980,
+    text-color: #fff,
+    accent-color-1: #ff00ea,
+    accent-color-2: #00ffea
+  ),
+  midnight: (
+    bg-color: #3e0147,
+    bg-transp-color: #3e014780,
+    text-color: #fff,
+    accent-color-1: #4b0b8a,
+    accent-color-2: #8a0b4b
+  ),
+  bubblegum: (
+    bg-color: #ff67b3,
+    bg-transp-color: #ff67b380,
+    text-color: #1c000b,
+    accent-color-1: #8b1abc,
+    accent-color-2: #bc1a8b
+  ),
+  gray: (
+    bg-color: #5a5a5a,
+    bg-transp-color: #5a5a5a80,
+    text-color: #bfbfbf,
+    accent-color-1: #004da0,
+    accent-color-2: #a0004d
+  ),
+  neo: (
+    bg-color: #000000,
+    bg-transp-color: #00000080,
+    text-color: #409cff,
+    accent-color-1: #004da0,
+    accent-color-2: #a0004d
+  ),
+  forest: (
+    bg-color: #236126,
+    bg-transp-color: #23612680,
+    text-color: #fff,
+    accent-color-1: #64dd17,
+    accent-color-2: #dd1764
+  ),
+  winter: (
+    bg-color: #09273d,
+    bg-transp-color: #09273d80,
+    text-color: #c3eaff,
+    accent-color-1: #00aeff,
+    accent-color-2: #ffae00
+  ),
+  spring: (
+    bg-color: #3ec043,
+    bg-transp-color: #3ec04380,
+    text-color: #2a310b,
+    accent-color-1: #29830b,
+    accent-color-2: #830b29
+  ),
+  summer: (
+    bg-color: #e6cf4a,
+    bg-transp-color: #e6cf4a80,
+    text-color: #0d2f01,
+    accent-color-1: #d5a52b,
+    accent-color-2: #2bd5a5
+  ),
+  fall: (
+    bg-color: #3d2e09,
+    bg-transp-color: #3d2e0980,
+    text-color: #f9ffc3,
+    accent-color-1: #ff6600,
+    accent-color-2: #6600ff
+  ),
+  mystic: (
+    bg-color: #2b1055,
+    bg-transp-color: #2b105580,
+    text-color: #ffffff,
+    accent-color-1: #f72585,
+    accent-color-2: #85f725
+  ),
+  sunset: (
+    bg-color: #ff6b6b,
+    bg-transp-color: #ff6b6b80,
+    text-color: #2c3e50,
+    accent-color-1: #ff9f1c,
+    accent-color-2: #1cff9f
+  ),
+  galactic: (
+    bg-color: #0c1446,
+    bg-transp-color: #0c144680,
+    text-color: #bfc0c0,
+    accent-color-1: #a88c02,
+    accent-color-2: #8ca802
+  ),
+  enchanted: (
+    bg-color: #3c1053,
+    bg-transp-color: #3c105380,
+    text-color: #f64c72,
+    accent-color-1: #2d00f7,
+    accent-color-2: #f72d00
+  ),
+  desert: (
+    bg-color: #F4E1C1,
+    bg-transp-color: #F4E1C180,
+    text-color: #6D5837,
+    accent-color-1: #BF6E48,
+    accent-color-2: #6EBF48
+  ),
+  arctic: (
+    bg-color: #D6EAF8,
+    bg-transp-color: #D6EAF880,
+    text-color: #1F618D,
+    accent-color-1: #3498DB,
+    accent-color-2: #DB3498
+  ),
+  tropical: (
+    bg-color: #D5F5E3,
+    bg-transp-color: #D5F5E380,
+    text-color: #196F3D,
+    accent-color-1: #28B463,
+    accent-color-2: #B42863
+  ),
+  pastel: (
+    bg-color: #FADBD8,
+    bg-transp-color: #FADBD880,
+    text-color: #884EA0,
+    accent-color-1: #AF7AC5,
+    accent-color-2: #C57AAF
+  ),
+  urban: (
+    bg-color: #34495E,
+    bg-transp-color: #34495E80,
+    text-color: #ECF0F1,
+    accent-color-1: #E74C3C,
+    accent-color-2: #4CE7E7
+  ),
+  vintage: (
+    bg-color: #FAE5D3,
+    bg-transp-color: #FAE5D380,
+    text-color: #7D6608,
+    accent-color-1: #D4AC0D,
+    accent-color-2: #AC0DD4
+  ),
+  futuristic: (
+    bg-color: #151719,
+    bg-transp-color: #15171980,
+    text-color: #5C7E90,
+    accent-color-1: #2980B9,
+    accent-color-2: #B98029
+  ),
+  candy: (
+    bg-color: #FDEDEC,
+    bg-transp-color: #FDEDEC80,
+    text-color: #6E2C00,
+    accent-color-1: #E74C3C,
+    accent-color-2: #4CE74C
+  ),
+  rainbow: (
+    bg-color: linear-gradient(90deg, 
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%),
+    bg-transp-color: linear-gradient(90deg, 
+    rgba(255, 0, 0, 0.5) 0%,
+    rgba(255, 154, 0, 0.5) 10%,
+    rgba(208, 222, 33, 0.5) 20%,
+    rgba(79, 220, 74, 0.5) 30%,
+    rgba(63, 218, 216, 0.5) 40%,
+    rgba(47, 201, 226, 0.5) 50%,
+    rgba(28, 127, 238, 0.5) 60%,
+    rgba(95, 21, 242, 0.5) 70%,
+    rgba(186, 12, 248, 0.5) 80%,
+    rgba(251, 7, 217, 0.5) 90%,
+    rgba(255, 0, 0, 0.5) 100%),
+    text-color: #000000,
+    accent-color-1: #FFFFFF,
+    accent-color-2: #000000
+  ),
+  gothic: (
+    bg-color: #2C3E50,
+    bg-transp-color: #2C3E5080,
+    text-color: #ad4644,
+    accent-color-1: #9B59B6,
+    accent-color-2: #B69B59
+  ),
+  swirl: (
+    bg-color: linear-gradient(90deg, 
+    rgb(0, 255, 255) 0%,
+    rgb(255, 0, 255) 100%),
+    bg-transp-color: linear-gradient(90deg, 
+    rgb(0, 255, 255, 0.5) 0%,
+    rgb(255, 0, 255, 0.5) 100%),
+    text-color: #000000,
+    accent-color-1: #FFFFFF,
+    accent-color-2: #000000
+  ),
+  aurora: (
+    bg-color: linear-gradient(90deg, rgba(44, 62, 80) 0%, rgb(76, 175, 109) 80%, rgb(175, 76, 150) 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(44, 62, 80, 0.5) 0%, rgba(76, 175, 109, 0.5) 80%, rgb(175, 76, 150, 0.5) 100%),
+    text-color: #ffffff,
+    accent-color-1: #32a852,
+    accent-color-2: #a832a8
+  ),
+  sea: (
+    bg-color: linear-gradient(90deg, #87CEEB 0%, #1E90FF 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(135, 206, 235, 0.5) 0%, rgba(30, 144, 255, 0.5) 100%),
+    text-color: #FFFFFF,
+    accent-color-1: #48D1CC,
+    accent-color-2: #FFA500
+  ),
+  beach: (
+    bg-color: linear-gradient(90deg, #FFA07A 0%, #985942 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(255, 160, 122, 0.5) 0%, rgba(255, 127, 80, 0.5) 100%),
+    text-color: #FFFFFF,
+    accent-color-1: #FFD700,
+    accent-color-2: #87CEEB
+  ),
+  mountains: (
+    bg-color: linear-gradient(90deg, #b3dde3 0%, #598db8 100%),
+    bg-transp-color: linear-gradient(90deg, rgba(176, 224, 230, 0.5) 0%, rgba(70, 130, 180, 0.5) 100%),
+    text-color: #000000,
+    accent-color-1: #00eeff,
+    accent-color-2: #ffee00
+  )
+);
+
+:root {
+  --transition-duration: 0.5s;
+
+  // Loop through color themes to generate CSS variables
+  @each $theme, $colors in $color-themes {
+    @each $color, $value in $colors {
+      --#{$color}-#{$theme}: #{$value};
+    }
+  }
+}
+
+// Generate color classes dynamically
+@each $theme, $colors in $color-themes {
+  .#{$theme} {
+    @each $color, $value in $colors {
+      --#{$color}: var(--#{$color}-#{$theme});
+    }
+  }
+}

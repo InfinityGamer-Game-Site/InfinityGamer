@@ -1,0 +1,46 @@
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  background-color: var(--accent-color-1);
+}
+
+#time {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 125%;
+}
+
+.settings-nav, .clock-nav {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings-nav:hover, .clock-nav:hover {
+  transform: rotate(360deg);
+}

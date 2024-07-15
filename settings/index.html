@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png?v=4">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v=4">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png?v=4">
+<link rel="manifest" href="/assets/favicons/site.webmanifest?v=4">
+<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg?v=4" color="#149cea">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico?v=4">
+<meta name="apple-mobile-web-app-title" content="InfinityGamer">
+<meta name="application-name" content="InfinityGamer">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml?v=4">
+<meta name="theme-color" content="#149cea">
+
+    <title>InfinityGamer</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/settings.css">
+  </head>
+  <body>
+    <iframe src="../assets/navbar.html" frameborder="0" scrolling="no" width="100%" height="75px"></iframe>
+    <h1>Settings</h1>
+    
+    <div class="setpar" id="cloak-div">
+    <h2>Cloaking</h2>
+    <div class="cloak-container">
+        <div class="left-cloak">
+            <h3>Change Site Name</h3>
+            <form id="title-changer">
+                <label for="title">Site Name:</label>
+                <input type="text" id="title" placeholder="Google Classroom">
+                <button type="submit" style="height: 50px;">Submit</button>
+            </form>
+        </div>
+        <div class="center-cloak">
+            <h3>About:blank embedder</h3>
+            <p>Site to redirect to after embedding (Google Classroom by default)</p>
+            <form id="redirect-changer">
+                <label for="redir-url">Site URL (do not include https://):</label>
+                <input type="text" id="redir-url" placeholder="classroom.google.com">
+                <button type="submit" style="height: 50px;">Submit</button>
+            </form>
+        </div>
+        <div class="right-cloak">
+            <h2>Auto-about:blank embedder</h2>
+            <p>Automatically open website in about:blank window when opened.</p>
+            <p id="status-check"></p>
+            <label class="switch">
+                <input type="checkbox" id="aabeSwitch" onchange="toggleAutoAboutBlankEmbedder()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    <p>Reload to see changes applied.</p>
+</div>
+<br>
+
+    
+    <div class="setpar">
+      <h2>Looks</h2>
+      <div class="cloak-container">
+      <div class="left-cloak">
+        <h3>Theme</h3>
+        <div id="themeButtons"></div>
+
+      </div>
+      <div class="right-cloak">
+    <h3>Font</h3>
+    <div id="fontSelect">
+
+    </div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="setpar">
+<h2>Backup Save</h2>
+<p>Save all game progress to one file for backup data if data is deleted.</p>
+<div class="cloak-container">
+<div class="left-cloak">
+  <h3>Download file</h3>
+  <p>Download save file. This will save everything, game saves, play time, theme, etc.</p>
+    <button id="backupBtn">Download</button>
+  </div>
+  <div class="right-cloak">
+    <h3>Restore from file</h3>
+    <p>Restoring will not delete progress from games not played in save file.</p>
+    <input type="file" id="restoreFileInput" style="display: none;">
+    <button id="restoreBtn">Restore</button>
+  </div>
+</div>
+</div>
+    <p id="version"></p>
+    <button onclick="redirect('changelog.html')" style="height: 50px; width: 200px;">View Changelog</button>
+    <button onclick="redirect('devlog.html')" style="height: 50px; width: 200px;">View Devlog</button>
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/settings.js"></script>
+  </body>
+</html>

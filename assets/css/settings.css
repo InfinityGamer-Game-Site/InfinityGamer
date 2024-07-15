@@ -1,0 +1,49 @@
+.cloak-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-cloak, .center-cloak, .right-cloak {
+    flex: 1;
+    margin: 0 5px; /* Add margin for spacing between cloaks */
+    outline: 1px solid var(--text-color);
+    border-radius: 10px;
+}
+
+.setpar {
+  outline: 1px solid var(--text-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.left-cloake, .right-cloake {
+    flex: 1;
+}
+
+
+#fontSelect {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#fontSelect button {
+    display: block;
+    padding: 10px; /* Keeping original padding */
+    margin: 5px; /* No margin between buttons */
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 40px;
+}
+
+#fontSelect label:button {
+    background-color: var(--accent-color-1);
+}
+
+#backupBtn, #restoreBtn {
+    width: 300px;
+    height: 50px;
+  }

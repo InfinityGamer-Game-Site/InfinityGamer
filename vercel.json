@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/404.html"
+    },
+    {
+      "source": "/games/display.html\\?g=:game",
+      "destination": "/games/:game"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=2592000"
+        }
+      ]
+    }
+  ]
+}
