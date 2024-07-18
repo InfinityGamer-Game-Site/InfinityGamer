@@ -45,6 +45,7 @@ const gameNames = [
   "big-ice-tower-tiny-square",
   "big-red-button",
   "big-tower-tiny-square",
+  "big-neon-tower-tiny-square",
   "binding-of-isaac",
   "bitlife",
   "black-hole-square",
@@ -111,6 +112,7 @@ const gameNames = [
   "dragon-vs-bricks",
   "draw-the-hill",
   "drift-boss",
+  "drift-hunters",
   "drive-mad",
   "duck-life-1",
   "duck-life-2",
@@ -457,7 +459,8 @@ const categories = {
       "1v1lol"
   ],
   sports: [
-      "100-player-pong"
+      "100-player-pong",
+      "8ball-billiards-classic"
   ],
   platformer: [
     "fullscreen-mario",
@@ -466,5 +469,8 @@ const categories = {
     "super-mario-64",
     "super-mario-maker-online",
     "2020-game"
+  ],
+  rhythm: [
+    "a-dance-of-fire-and-ice"
   ]
 };

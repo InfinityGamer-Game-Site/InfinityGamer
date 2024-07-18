@@ -150,7 +150,7 @@ function showCategories() {
   // Create category content element
   var categoryContent = document.createElement('div');
   categoryContent.classList.add('category-content');
-        categoryContent.innerHTML = '<div id="cat-wrapper"><category data-category="papas"></category><category data-category="minecraft"></category><category data-category="2048"></category><category data-category="mario"></category><category data-category="idle"></category><category data-category="cars"></category><category data-category="puzzle"></category><category data-category="shooter"></category><category data-category="sports"></category></div>';
+        categoryContent.innerHTML = '<div id="cat-wrapper"><category data-category="papas"></category><category data-category="minecraft"></category><category data-category="2048"></category><category data-category="mario"></category><category data-category="idle"></category><category data-category="cars"></category><category data-category="puzzle"></category><category data-category="shooter"></category><category data-category="sports"></category><category data-category="rhythm"></category></div>';
 
 
   // Create exit button element

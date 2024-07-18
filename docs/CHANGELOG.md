@@ -345,3 +345,12 @@ Readded removed games and moved to new repo
 - Readded removed games due to LFS problems
 - Moved to new repo (not a fork of the game library)
 - Updated incorrect and missing info in changelog
+
+### v3.2 - New games
+
+Added some new games
+
+6/15/24
+
+- Added Drift Hunters and Big Neon Tower Tiny Square
+- Added some games to some categories
