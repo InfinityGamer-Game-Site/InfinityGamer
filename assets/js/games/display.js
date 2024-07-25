@@ -92,3 +92,16 @@ function updatePlayTime() {
 }
 
 setInterval(updatePlayTime, 100);
+
+function downloadGame(gameName) {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.active.postMessage({
+        type: 'ADD_TO_CACHE',
+        urls: [
+          `games/files/${gameName}/`
+        ] // Replace with the correct URLs relative to the root
+      });
+    });
+  }
+}

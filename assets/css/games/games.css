@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 
-#random-game-container{
+#random-most-played-game-container{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +30,14 @@
   background-position: center;
   transition-duration: 0.5s;
   font-size: 125%;
+  z-index: 1;
+  opacity: 0;
+  transform: rotateX(90deg);
+}
+
+.game-box.in-view {
+  opacity: 1;
+  transform: rotateX(0deg);
 }
 
 .game-box.compact {
@@ -40,26 +48,31 @@
 }
 
 .game-box:hover {
-  color: var(--accent-color-1);
   border: 1px solid var(--accent-color-1);
   border-radius: 20%;
   margin: -15px;
   margin-left: 15px;
   margin-right: 15px;
-  translate: 0 30px;
-  width: 160px;
-  height: 160px;
+  translate: 0 15px;
+  width: 200px;
+  height: 200px;
   font-size: 130%;
+  z-index: 100;
 }
 
-.game-box.random-game:hover {
-  color: var(--accent-color-1);
+.game-box.random-mp-game:hover {
   border: 1px solid var(--accent-color-1);
   border-radius: 20%;
   margin: 15px;
   translate: 0 0;
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
+  font-size: 130%;
+}
+
+.game-box.random-mp-game.game-box.compact:hover {
+  width: 150px;
+  height: 150px;
   font-size: 130%;
 }
 
@@ -123,7 +136,7 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50%;
+  width: 75%;;
   transform: translate(-50%, 0);
   background-color: var(--bg-color);
   padding: 20px;
@@ -189,4 +202,10 @@ category span {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+#rerollRandom {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }

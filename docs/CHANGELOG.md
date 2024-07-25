@@ -340,7 +340,7 @@ Added gameplay stats, and some small changes and bug fixes
 
 Readded removed games and moved to new repo
 
-6/15/24
+7/15/24
 
 - Readded removed games due to LFS problems
 - Moved to new repo (not a fork of the game library)
@@ -350,7 +350,21 @@ Readded removed games and moved to new repo
 
 Added some new games
 
-6/15/24
+7/15/24 - 7/18/24
 
 - Added Drift Hunters and Big Neon Tower Tiny Square
 - Added some games to some categories
+
+### v3.3 - Small changes everywhere
+
+Added some small changes all around the site
+
+7/18/24 - 7/24/24 (i keep taking breaks lol)
+
+- Added images for Drift Hunters and Big Neon Tower Tiny Square
+- Added more customizable game downloading, rather than downloading every game you play
+- Added some nicer looking game box hover animations in loose mode
+- Added a scroll animation on the game boxes
+- Added random game rerolling
+- Extreme code prettification and optimization using ChatGPT on games.js
+- Added most played game on games list
