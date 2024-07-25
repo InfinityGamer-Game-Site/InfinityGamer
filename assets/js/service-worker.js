@@ -1,3 +1,4 @@
+
 const CACHE_NAME = 'my-site-cache-v13';
 let urlsToCache = [
   'index.html',
@@ -7,6 +8,7 @@ let urlsToCache = [
   'assets/navbar.html',
   'games/display.html',
   'games/fullscreen.html'
+
   // Add more URLs to cache as needed
 ];
 
