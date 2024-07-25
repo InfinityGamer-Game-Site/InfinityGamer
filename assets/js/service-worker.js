@@ -1,9 +1,12 @@
-const CACHE_NAME = 'my-site-cache-v12';
-const urlsToCache = [
-  '/',
-  'assets/css/global.css',
-  'assets/js/global.js',
-  'assets/css/themes.min.css'
+const CACHE_NAME = 'my-site-cache-v13';
+let urlsToCache = [
+  'index.html',
+  'games/index.html',
+  'assets/css/',
+  'assets/js/',
+  'assets/navbar.html',
+  'games/display.html',
+  'games/fullscreen.html'
   // Add more URLs to cache as needed
 ];
 
@@ -17,12 +20,12 @@ self.addEventListener('install', event => {
 });
 
 // Activate event - Clean up old caches
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', event => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.map((cacheName) => {
+        cacheNames.map(cacheName => {
           if (!cacheWhitelist.includes(cacheName)) {
             console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
@@ -70,3 +73,17 @@ self.addEventListener('fetch', event => {
       })
   );
 });
+
+// Listen for messages to add new URLs to cache
+self.addEventListener('message', event => {
+  if (event.data && event.data.type === 'ADD_TO_CACHE') {
+    caches.open(CACHE_NAME).then(cache => {
+      cache.addAll(event.data.urls);
+    });
+  }
+});
+
+
+
+
+
