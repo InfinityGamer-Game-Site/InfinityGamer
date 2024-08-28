@@ -75,18 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (categoryParam) {
     const randomGameLabel = document.getElementById("random-game-label");
     randomGameLabel.remove();
-    console.log(1);
     categories[categoryParam].forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
-    console.log(2);
-    //document.getElementById("random-most-played-game-label").remove();
     document.getElementById("svg-container").remove();
   } else {
     gameNames.forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
-    console.log(3);
     let randomIndex = Math.floor(Math.random() * gameNames.length);
     let randomGame = gameNames[randomIndex];
     document
@@ -96,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.addEventListener("input", function () {
       const filterValue = this.value.toLowerCase();
       const gameBox = document.querySelector(".random-mp-game");
-      
       if (filterValue === "") {
         gameBox.style.display = "block";
         randomGameLabel.style.display = "block";
