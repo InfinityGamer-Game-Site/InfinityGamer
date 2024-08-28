@@ -73,16 +73,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (categoryParam) {
+    const randomGameLabel = document.getElementById("random-game-label");
+    randomGameLabel.remove();
     categories[categoryParam].forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
-    document.getElementById("random-mp-game-label").remove();
     document.getElementById("svg-container").remove();
   } else {
     gameNames.forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
-
     let randomIndex = Math.floor(Math.random() * gameNames.length);
     let randomGame = gameNames[randomIndex];
     document
@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.addEventListener("input", function () {
       const filterValue = this.value.toLowerCase();
       const gameBox = document.querySelector(".random-mp-game");
-      const randomGameLabel = document.querySelector(".random-mp-game-label");
       if (filterValue === "") {
         gameBox.style.display = "block";
         randomGameLabel.style.display = "block";
