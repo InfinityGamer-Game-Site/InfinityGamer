@@ -368,3 +368,12 @@ Added some small changes all around the site
 - Added random game rerolling
 - Extreme code prettification and optimization using ChatGPT on games.js
 - Added most played game on games list
+
+#### v3.3.1 - Bug fixes
+
+Small bug fixes
+
+8/27/24 (D: I've kinda lost motivation for InfinityGamer since theres not much new stuff I can add...)
+
+- Added forced source view for the Minecraft games because keyboard wouldn't work without it.
+- Fixed categories not showing

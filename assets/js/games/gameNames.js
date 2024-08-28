@@ -395,7 +395,10 @@ const gameNames = [
 const sourceNeeded = [
   "a-dark-room",
   "cookie-clicker",
-  "incremancer"
+  "incremancer",
+  "minecraft-1.3",
+  "minecraft-1.5.2",
+  "minecraft-beta-0.30"
 ];
 
 
