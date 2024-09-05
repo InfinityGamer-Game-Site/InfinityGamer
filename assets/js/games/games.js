@@ -57,8 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("compact", false);
       }
     });
-
-    return filteredList;
   }
 
   function checkInView() {
@@ -75,6 +73,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (categoryParam) {
+<<<<<<< HEAD
+=======
+    const randomGameLabel = document.getElementById("random-game-label");
+    randomGameLabel.remove();
+>>>>>>> 3ac8b98c21011a056220c282bfe3349c6de12a19
     categories[categoryParam].forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
@@ -93,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.addEventListener("input", function () {
       const filterValue = this.value.toLowerCase();
       const gameBox = document.querySelector(".random-mp-game");
-      
       if (filterValue === "") {
         gameBox.style.display = "block";
         randomGameLabel.style.display = "block";
