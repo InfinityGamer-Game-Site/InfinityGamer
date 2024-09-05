@@ -373,7 +373,42 @@ Added some small changes all around the site
 
 Small bug fixes
 
-8/27/24 (D: I've kinda lost motivation for InfinityGamer since theres not much new stuff I can add...)
+8/27/24 (I've kinda lost motivation for InfinityGamer since theres not much new stuff I can add...)
 
 - Added forced source view for the Minecraft games because keyboard wouldn't work without it.
 - Fixed categories not showing
+
+### v3.4 - I found things to do
+
+Lots of new small features and bug fixes
+
+8/27/24 -
+
+- Lessened the game box scroll animation because I found it annoying
+- Made the dark and neo theme background #050505 not #000000
+- Added Neo2, Neo3, and Neo4 themes
+- Added Handjet font
+- Improved looks of random/most played game
+- Moved compact/loose switch to looks settings
+- Removed Super Mario Maker Online from Mario category
+- Updated 404 page to have pixel font and Mario
+- Removed Fullscreen Mario because Mario was the same game but better
+- Removed Adrenaline Challenge since it was broken
+- Made game search bar slightly taller
+- Removed category images
+- Added more games to categories
+- Updated some category CSS and looks
+- Changed look of page view counter
+- Changed logo to not be made with AI, instead traced it, colors need some work
+- Updated favicon
+- Changed index text
+- Added game count to bottom of games
+- Changed some of the possible random index text values and made it change every 10 seconds
+- Removed lastmods from sitemap because I literally never updated it
+- Added text to say that categories are unfinished
+- Updated README.md
+- Added Mine Blocks game
+- Added total play time to stats
+- Add VSCode settings to .gitignore
+- Removed subtle 3D effect on about:blank button
+- Changed navbar game icon hover icon

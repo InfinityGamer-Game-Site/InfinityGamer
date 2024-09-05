@@ -4,13 +4,16 @@ const randomTexts = [
     "gabriel looks like a dog",
     "mitochondria is the powerhouse of the cell",
     "i forgor",
-    "new update coming soon i think",
-    "did you know? penguins can fly, but only on tuesdays",
-    "did you know? if you lick a toad, you'll gain the ability to speak fluent French for exactly 24 hours",
-    "did you know? the eiffel tower was originally constructed upside down, but they flipped it over at the last minute because it looked better that way",
-    "did you know? if you stare directly at the sun for 10 seconds, you'll gain the ability to see into the future, but only for things that have already happened",
-    "did you know? sharks are afraid of rubber ducks and will swim away as soon as they see one",
-    "Wisdom is so sigma"
+    "Wisdom is literally the best",
+    "erm, you should really be focusing on your schoolwork 🤓☝",
+    "did you know this text is random",
+    "y'all play games too much, the bandwidth of this site is like 600GB on a good month",
+    "did you know that there are 34 visual themes to choose from in settings",
+    "did you know that there are 14 fonts to choose from in settings",
+    "did you know that you can change the site title and how the cloaking works in settings",
+    "did you know you can download all your games progresses into one file as a backup at the bottom of settings",
+    "did you know you can view the stats of how much you play games in stats",
+    "games list loose/compact setting has been moved to settings just so everyone knows"
 ];
 
 // Function to generate a random number
@@ -29,7 +32,7 @@ function displayRandomText() {
 // Display random text on page load
 window.addEventListener("load", displayRandomText);
 
-
+setInterval(displayRandomText, 10000);
 
 //about blank embedder
 let url = window.location.href;
@@ -68,23 +71,7 @@ if (!localStorage.getItem("visited")) {
     localStorage.setItem("visited", true);
 }
 
-const box = document.getElementById('embed-button');
-
-box.addEventListener('mousemove', e => {
-    const boundingRect = box.getBoundingClientRect();
-    const offsetX = e.clientX - boundingRect.left;
-    const offsetY = e.clientY - boundingRect.top;
-
-    const rotateX = (offsetY / boundingRect.height - 0.5) * 30;
-    const rotateY = (offsetX / boundingRect.width - 0.5) * 5;
-
-    box.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-});
-
-box.addEventListener('mouseleave', () => {
-    // Reset rotation when mouse leaves the element
-    box.style.transform = 'rotateX(0deg) rotateY(0deg)';
-});
+const box = document.getElementById('infinitylogo');
 
 window.onload = function() {
     // Select the image element
@@ -116,4 +103,15 @@ window.onload = function() {
   "pulse": false
 });
 };
+document.addEventListener("DOMContentLoaded", function () {
+document.getElementById("game-count").textContent = "There are currently " + gameNames.length + " games on InfinityGamer.";
+});
 
+fetch('package.json')
+    .then(response => response.json())
+    .then(data => {
+        // Get the version
+        const version = data.version;
+        document.getElementById("version").textContent = 'Current version: ' + version;
+    })
+    .catch(error => console.error('Error:', error));

@@ -1,12 +1,12 @@
 # Devlog
 
-This is the devlog, which is how I built and things I did to the site.
+This is the devlog, which explains how I built the site.
 
 This is a work in progress right now.
 
 ## Why did I make this site?
 
-I amde this site because a lot of game websites that were unblocked at my school tended to be low quality and obviously thrown together by someone who doesn't even know how to code. I had already been learning HTML5, so I decided to start making a site, and here we are.
+I made this site because a lot of game websites that were unblocked at my school tended to be low quality and obviously thrown together by someone who doesn't even know how to code. I had already been learning HTML5, so I decided to start making a site, and here we are.
 
 ## How I made it
 
@@ -14,7 +14,7 @@ I amde this site because a lot of game websites that were unblocked at my school
 
 InfinityGamer is built in HTML, CSS, JavaScript, and some SCSS.
 
-At he very start of InfinityGamer I used just straight GitHub to code this site, which is not good for large files and folders, which this site has a lot of. I then moved to GitHub Codespaces, which I stayed at for a while. But it would stop me from coding when I used to much data or time, and it counted both values very inaccurately, forcing me to go on week long breaks occasionally. I bought a gaming laptop, which I wouldd be using for games, coding, and music making. I transferred everything to a USB drive, and on my gaming laptop coded on Visual Studio Code, and then brought the USB drive to school, and coded on my chromebook with a rudimetary text editor (Visual Studio Code was blocked). That is how I am actively developing it now, except for the fact that it's summer break, so I'm only on the gaming laptop.
+At he very start of InfinityGamer I used just straight GitHub to code this site, which is not good for large files and folders, which this site has a lot of. I then moved to GitHub Codespaces, which I stayed at for a while. But it would stop me from coding when I used to much data or time, and it counted both values very inaccurately, forcing me to go on week long breaks occasionally. I bought a gaming laptop, which I wouldd be using for games, coding, and music making. I transferred everything to a USB drive, and on my gaming laptop coded on Visual Studio Code, and then brought the USB drive to school, and coded on my chromebook with a rudimetary text editor (Visual Studio Code was blocked). That is how I am actively developing it now.
 
 ### Deployment
 

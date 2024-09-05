@@ -12,7 +12,5 @@
     ],
     "liveSassCompile.settings.excludeList": [
         "/games/files/**",
-    ],
-    "discord.detailsIdling": "Idle",
-    "discord.detailsEditing": "Editing {file_name} in {workspace}"
+    ]
 }

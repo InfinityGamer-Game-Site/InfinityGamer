@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleMargin() {
     const gameBoxes = document.querySelectorAll(".game-box");
     gameBoxes.forEach((box) => {
-      if (marginSwitch.checked) {
+      if (localStorage.getItem("compact") === "true") {
         box.classList.add("compact");
         localStorage.setItem("compact", true);
       } else {
@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("compact", false);
       }
     });
+
+    return filteredList;
   }
 
   function checkInView() {
@@ -73,12 +75,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (categoryParam) {
-    const randomGameLabel = document.getElementById("random-game-label");
-    randomGameLabel.remove();
     categories[categoryParam].forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
     document.getElementById("svg-container").remove();
+    document.getElementById("random-most-played-game-container").remove();
   } else {
     gameNames.forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
@@ -86,12 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let randomIndex = Math.floor(Math.random() * gameNames.length);
     let randomGame = gameNames[randomIndex];
     document
-      .getElementById("random-most-played-game-container")
+      .getElementById("random-game-container")
       .appendChild(createGameBox(randomGame, true));
 
     searchInput.addEventListener("input", function () {
       const filterValue = this.value.toLowerCase();
       const gameBox = document.querySelector(".random-mp-game");
+      
       if (filterValue === "") {
         gameBox.style.display = "block";
         randomGameLabel.style.display = "block";
@@ -101,17 +103,51 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+    //stats
+    function getFilteredLocalStorageValues() {
+      const filteredList = {};
+  
+      gameNames.forEach((key) => {
+        const value = localStorage.getItem(key + "PlayTime");
+  
+        if (value && value !== "0") {
+          filteredList[key] = parseFloat(value);
+        }
+      });
+  
+      return filteredList;
+    }
+  
+    const filteredValues = getFilteredLocalStorageValues();
+    console.log(filteredValues);
+  
+    function findKeyWithLargestNumericValue(filteredValues) {
+      let largestKey = null;
+      let largestValue = -Infinity;
+  
+      Object.entries(filteredValues).forEach(([key, value]) => {
+        const numericValue = parseFloat(value);
+        if (!isNaN(numericValue) && numericValue > largestValue) {
+          largestValue = numericValue;
+          largestKey = key;
+        }
+      });
+  
+      return largestKey;
+    }
+  
+    const largestKey = findKeyWithLargestNumericValue(filteredValues);
+    if (largestKey && document.getElementById("most-played-game-container")){
+    document.getElementById("most-played-game-container").appendChild(createGameBox(largestKey, true));
+    } else {
+      if (document.getElementById("most-played-game-container")) {
+        document.getElementById("most-played-game-container").remove();
+      }
+    }
 
-  const marginSwitch = document.getElementById("marginSwitch");
   if (localStorage.getItem("compact") === "true") {
-    marginSwitch.checked = true;
     toggleMargin();
-  } else {
-    marginSwitch.checked = false;
   }
-
-  marginSwitch.addEventListener("change", toggleMargin);
-  setInterval(toggleMargin, 500);
 
   checkInView();
   window.addEventListener("scroll", checkInView);
@@ -119,43 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("searchInput").addEventListener("input", filterGames);
 
-  //stats
-  function getFilteredLocalStorageValues() {
-    const filteredList = {};
-
-    gameNames.forEach((key) => {
-      const value = localStorage.getItem(key + "PlayTime");
-
-      if (value && value !== "0") {
-        filteredList[key] = parseFloat(value);
-      }
-    });
-
-    return filteredList;
-  }
-
-  const filteredValues = getFilteredLocalStorageValues();
-  console.log(filteredValues);
-
-  function findKeyWithLargestNumericValue(filteredValues) {
-    let largestKey = null;
-    let largestValue = -Infinity;
-
-    Object.entries(filteredValues).forEach(([key, value]) => {
-      const numericValue = parseFloat(value);
-      if (!isNaN(numericValue) && numericValue > largestValue) {
-        largestValue = numericValue;
-        largestKey = key;
-      }
-    });
-
-    return largestKey;
-  }
-
-  const largestKey = findKeyWithLargestNumericValue(filteredValues);
-  document
-    .getElementById("random-most-played-game-container")
-    .appendChild(createGameBox(largestKey, true));
+  document.getElementById("game-count").textContent = "Game count: " + gameNames.length;
 });
 
 function showCategories() {
@@ -176,6 +176,9 @@ function showCategories() {
       <category data-category="shooter"></category>
       <category data-category="sports"></category>
       <category data-category="rhythm"></category>
+      <category data-category="td"></category>
+      <category data-category="arcade"></category>
+      <p>Categories are currently unfinished, not all games are in a category yet.</p>
     </div>`;
 
   const exitButton = document.createElement("button");
@@ -191,8 +194,6 @@ function showCategories() {
 
   document.querySelectorAll("category").forEach((button) => {
     const category = button.dataset.category;
-    const imagePath = `../assets/images/categories/${category}.png`;
-    button.style.backgroundImage = `url('${imagePath}')`;
     const catText = document.createElement("span");
     catText.textContent = toTitleCase(category.replace(/-/g, " "));
     button.appendChild(catText);
@@ -234,6 +235,7 @@ function fetchAndModifySVG() {
   fetch(document.getElementById("rerollRandom").src)
     .then((response) => response.text())
     .then((data) => {
+      document.getElementById("rerollRandom").remove();
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = data;
       const svgElement = tempDiv.querySelector("svg");

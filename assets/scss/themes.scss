@@ -7,7 +7,7 @@ $color-themes: (
     accent-color-2: #ff007b
   ),
   dark: (
-    bg-color: #000000,
+    bg-color: #050505,
     bg-transp-color: #00000080,
     text-color: #fff,
     accent-color-1: #007bff,
@@ -38,13 +38,6 @@ $color-themes: (
     bg-color: #5a5a5a,
     bg-transp-color: #5a5a5a80,
     text-color: #bfbfbf,
-    accent-color-1: #004da0,
-    accent-color-2: #a0004d
-  ),
-  neo: (
-    bg-color: #000000,
-    bg-transp-color: #00000080,
-    text-color: #409cff,
     accent-color-1: #004da0,
     accent-color-2: #a0004d
   ),
@@ -235,13 +228,41 @@ $color-themes: (
     accent-color-1: #FFD700,
     accent-color-2: #87CEEB
   ),
-  mountains: (
+  mountain: (
     bg-color: linear-gradient(90deg, #b3dde3 0%, #598db8 100%),
     bg-transp-color: linear-gradient(90deg, rgba(176, 224, 230, 0.5) 0%, rgba(70, 130, 180, 0.5) 100%),
     text-color: #000000,
     accent-color-1: #00eeff,
     accent-color-2: #ffee00
-  )
+  ),
+  neo: (
+    bg-color: #050505,
+    bg-transp-color: #00000080,
+    text-color: #409cff,
+    accent-color-1: #004da0,
+    accent-color-2: #a0004d
+  ),
+  neo2: (
+    bg-color: #050505,
+    bg-transp-color: #00000080,
+    text-color: #ff4040,
+    accent-color-1: #a0004d,
+    accent-color-2: #004da0
+  ),
+  neo3: (
+    bg-color: #050505,
+    bg-transp-color: #00000080,
+    text-color: #ff40df,
+    accent-color-1: #a0004d,
+    accent-color-2: #004da0
+  ),
+  neo4: (
+    bg-color: #050505,
+    bg-transp-color: #00000080,
+    text-color: #40ff40,
+    accent-color-1: #004da0,
+    accent-color-2: #a0004d
+  ),
 );
 
 :root {

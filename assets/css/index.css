@@ -8,12 +8,3 @@ pop-up {
     outline: 2px outset var(--text-color);
     font-size: 125%;
 }
-
-#embed-button {
-  transition: transform 0.1s;
-  transform-style: preserve-3d;
-}
-
-#embed-button:hover {
-  transform: rotateX(15deg) rotateY(15deg);
-}

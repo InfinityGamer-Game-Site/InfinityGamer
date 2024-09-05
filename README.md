@@ -1,12 +1,9 @@
 # InfinityGamer
 
-<img src="assets/images/logo.png" style="width: 300px; height: auto; float: right;">
+<img src="assets/images/logo.svg" style="width: 300px; height: auto; float: right;">
 
 Infinite fun, unblocked!
-A new game site with over 380 games, many alternate links, and much more!
-
-![GitHub repo size](https://img.shields.io/github/repo-size/InfinityGamer-Game-Site/InfinityGamer)
-![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/InfinityGamer-Game-Site/InfinityGamer/games%2Ffiles?type=dir&label=games)
+A new game site with over 390 games, many alternate links, and much more!
 
 ## Deployment
 
@@ -33,3 +30,7 @@ If you deployed my site, thank you, you can submit it to me in the alternate lin
 
 - Index.html (homepage) cannot be a subdirectory (domain.com/subdirectory)
 - Can be a subdomain (subdomain.domain.com)
+
+### License
+
+[Link](LICENSE.md)

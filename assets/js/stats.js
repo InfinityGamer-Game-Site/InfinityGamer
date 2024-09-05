@@ -121,3 +121,6 @@ new Chart("myChart", {
       }
     }
   });
+
+  let sum = values.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  document.getElementById("totalPlayTime").textContent = "Total Play Time: " + formatDuration(sum);

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const game = document.getElementById('game-nav');
     
     game.addEventListener('mouseover', () => {
-        game.textContent = 'gamepad';
+        game.textContent = 'videogame_asset';
     });
 
     game.addEventListener('mouseout', () => {

@@ -14,7 +14,6 @@ const gameNames = [
   "a-dark-room",
   "a-difficult-game-about-climbing",
   "achievement-unlocked",
-  "adrenaline-challenge",
   "age-of-war",
   "alien-hominid",
   "alien-invaders-io",
@@ -144,7 +143,6 @@ const gameNames = [
   "friendly-fire",
   "froggys-battle",
   "frying-nemo",
-  "fullscreen-mario",
   "game-inside-a-game",
   "generic-fishing-game",
   "geometry-dash-knockoff",
@@ -207,6 +205,7 @@ const gameNames = [
   "marvin-spectrum",
   "matrix-rampage",
   "meme-2048",
+  "mine-blocks",
   "minecraft-1.3",
   "minecraft-1.5.2",
   "minecraft-beta-0.30",
@@ -427,13 +426,18 @@ const categories = {
     "meme-2048",
   ],
   mario: [
-    "fullscreen-mario",
     "mario",
     "super-mario-63",
     "super-mario-64",
-    "super-mario-maker-online",
   ],
-  idle: ["incremancer", "idle-breakout", "shark-game", "space-company"],
+  idle: [
+    "incremancer", 
+    "idle-breakout", 
+    "shark-game", 
+    "space-company", 
+    "a-dark-room",
+    "aspiring-artist"
+  ],
   cars: [
     "x-trial-racing",
     "drive-mad",
@@ -456,10 +460,16 @@ const categories = {
     "doge-2048",
     "flappy-2048",
     "meme-2048",
+    "align-4"
   ],
   shooter: [
       "10-minutes-till-dawn",
-      "1v1lol"
+      "1v1lol",
+      "alien-hominid",
+      "anti-terrorist-rush",
+      "ascii-space",
+      "asteroids",
+      "awesome-tanks-2"
   ],
   sports: [
       "100-player-pong",
@@ -470,10 +480,25 @@ const categories = {
     "mario",
     "super-mario-63",
     "super-mario-64",
-    "super-mario-maker-online",
-    "2020-game"
+    "2020-game",
+    "a-difficult-game-about-climbing",
+    "achievement-unlocked"
   ],
   rhythm: [
     "a-dance-of-fire-and-ice"
+  ],
+  td: [
+    "age-of-war"
+  ],
+  arcade: [
+    "alien-invaders-io",
+    "angry-birds",
+    "arcade-wizard",
+    "ascii-space",
+    "asteroids",
+    "astray",
+    "avalanche",
+    "back-country",
+    "backflip-dive-3d"
   ]
 };

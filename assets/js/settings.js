@@ -107,7 +107,8 @@ document.addEventListener('DOMContentLoaded', function() {
       { name: 'Black Ops One', displayName: 'Black Ops One' },
       { name: 'Special Elite', displayName: 'Special Elite' },
       { name: 'Silkscreen', displayName: 'Silkscreen' },
-      { name: 'Audiowide', displayName: 'Audiowide' }
+      { name: 'Audiowide', displayName: 'Audiowide' },
+      { name: 'Handjet', displayName: 'Handjet' }
   ];
 
   const fontSelectDiv = document.getElementById('fontSelect');
@@ -137,7 +138,6 @@ const themes = [
   'midnight',
   'bubblegum',
   'gray',
-  'neo',
   'forest',
   'winter',
   'spring',
@@ -161,7 +161,11 @@ const themes = [
   'aurora',
   'sea',
   'beach',
-  'mountains'
+  'mountain',
+  "neo",
+  "neo2",
+  "neo3",
+  "neo4"
 ];
 
 // Function to create theme buttons
@@ -193,4 +197,28 @@ fetch('../package.json')
     .catch(error => console.error('Error:', error));
 
 
+
+
+
+
+    
+
+    const marginSwitch = document.getElementById("marginSwitch");
+    if (localStorage.getItem("compact") === "true") {
+      marginSwitch.checked = true;
+    } else {
+      marginSwitch.checked = false;
+    }
+
+    function toggleMargin() {
+        if (marginSwitch.checked) {
+          localStorage.setItem("compact", true);
+        } else {
+          localStorage.setItem("compact", false);
+        }
+    }
+    
+  marginSwitch.addEventListener("change", toggleMargin);
+  setInterval(toggleMargin, 500);
 });
+
