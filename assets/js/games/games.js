@@ -73,11 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (categoryParam) {
-<<<<<<< HEAD
-=======
-    const randomGameLabel = document.getElementById("random-game-label");
-    randomGameLabel.remove();
->>>>>>> 3ac8b98c21011a056220c282bfe3349c6de12a19
     categories[categoryParam].forEach(function (gameName) {
       gamesWrapper.appendChild(createGameBox(gameName));
     });
