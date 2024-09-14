@@ -382,7 +382,7 @@ Small bug fixes
 
 Lots of new small features and bug fixes
 
-8/27/24 -
+8/27/24 - 9/5/24
 
 - Lessened the game box scroll animation because I found it annoying
 - Made the dark and neo theme background #050505 not #000000
@@ -412,3 +412,15 @@ Lots of new small features and bug fixes
 - Add VSCode settings to .gitignore
 - Removed subtle 3D effect on about:blank button
 - Changed navbar game icon hover icon
+
+#### v3.4.1 - Small things and requests
+
+Some small updates and adding requests and bug fixes
+
+9/13/24
+
+- Changed index text
+- Updated random index text
+- Added Mr. Mine
+- Readded Shark Game, I don't know when it got deleted
+- Added 3 new sneaky alts for Vercel and a share link

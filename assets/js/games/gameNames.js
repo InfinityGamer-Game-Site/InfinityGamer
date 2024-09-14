@@ -219,6 +219,7 @@ const gameNames = [
   "moto-x3m-pool-party",
   "moto-x3m-spooky",
   "moto-x3m-winter",
+  "mr-mine",
   "my-friend-pedro",
   "n-gon",
   "nazi-zombies",
@@ -436,7 +437,8 @@ const categories = {
     "shark-game", 
     "space-company", 
     "a-dark-room",
-    "aspiring-artist"
+    "aspiring-artist",
+    "mr-mine"
   ],
   cars: [
     "x-trial-racing",
