@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <script>
+        var crazysdk;
+
+        function loadCrazyGamesSdk()
+        {
+            var sdkScript = document.createElement('script');
+            sdkScript.src = "https://sdk.crazygames.com/crazygames-sdk-v1.js";
+            sdkScript.onload = function()
+            {
+                crazysdk = window.CrazyGames.CrazySDK.getInstance(); // getting the SDK
+                crazysdk.init(); // initializing the SDK, call as early as possible
+            }
+            document.head.appendChild(sdkScript);
+        }
+
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) == variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            console.log('Query variable %s not found', variable);
+        }
+
+        if (getQueryVariable("referer") == "crazygames")
+        {
+            loadCrazyGamesSdk();
+        }
+    </script>
+</head>
+<body style="background-color: black; padding: 0; margin: 0; height: 100%; overflow:hidden;">
+    <div class='game-container'>
+        <iframe id='gameFrame'></iframe>
+    </div>
+
+    <style>
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .game-frame {
+            border: 0;
+            max-width:1280px;
+            max-height: 720px;
+        }
+
+        .game-frame-desktop {
+            width: 100vw;
+            height: 56.25vw;
+        }
+
+        .game-frame-mobile {
+            width: 56.25vh;
+            height: 100vh;
+        }
+        
+        @media (min-aspect-ratio: 16/9) {
+            .game-frame-desktop {
+                width: 178vh;
+                height: 100vh;
+            }
+            .game-frame-mobile {
+                width: 56.25vh;
+                height: 100vh;
+            }
+        }
+    </style>
+    <script>
+        var orientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+        var gameFrame = document.getElementById("gameFrame");
+
+        if (getParameterByName('m') != '1')// && orientation === "landscape-primary" || orientation === "landscape-secondary" || orientation === undefined)
+        {
+            gameFrame.src = "https://mrmine.com/game/desktop/index.html?t=1709584937";
+            gameFrame.classList.add("game-frame-desktop");
+        } 
+        else
+        {
+            gameFrame.src = "https://mrmine.com/game/mobile/index.html"
+            gameFrame.classList.add("game-frame-mobile");
+        }
+
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+    </script>
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1658647427735318');
+        fbq('track', "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1658647427735318&ev=PageView&noscript=1"
+    /></noscript>
+
+    <script type="text/javascript">
+    var sc_project=9427182; 
+    var sc_invisible=1; 
+    var sc_security="637f988f"; 
+    var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><img
+    class="statcounter"
+    src="http://c.statcounter.com/9427182/0/637f988f/1/"
+    alt="hits counter"></div></noscript>
+    <iframe src="https://playsaurusstats.com/loadTimeCheck.html"></iframe>
+</body>
+</html>

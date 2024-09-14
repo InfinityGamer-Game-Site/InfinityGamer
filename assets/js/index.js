@@ -8,12 +8,10 @@ const randomTexts = [
     "erm, you should really be focusing on your schoolwork 🤓☝",
     "did you know this text is random",
     "y'all play games too much, the bandwidth of this site is like 600GB on a good month",
-    "did you know that there are 34 visual themes to choose from in settings",
-    "did you know that there are 14 fonts to choose from in settings",
+    "did you know that there are 34 visual themes and 14 fonts to choose from in settings",
     "did you know that you can change the site title and how the cloaking works in settings",
     "did you know you can download all your games progresses into one file as a backup at the bottom of settings",
-    "did you know you can view the stats of how much you play games in stats",
-    "games list loose/compact setting has been moved to settings just so everyone knows"
+    "did you know you can view the stats of how much you play games in stats"
 ];
 
 // Function to generate a random number
