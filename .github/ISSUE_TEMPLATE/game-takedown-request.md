@@ -2,7 +2,7 @@
 name: Game Takedown Request
 about: For developers of games wanting their game off of InfinityGamer
 title: "[INSERT GAME NAME HERE] Takedown Request"
-labels: ''
+labels: takedown request
 assignees: InfinityLoop1
 
 ---
