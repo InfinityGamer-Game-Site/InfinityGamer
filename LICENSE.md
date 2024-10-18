@@ -13,7 +13,7 @@ Under the following terms:
 
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
-**Note:** Any files and directories in the "/games/files/" directory, or any games or game-related content associated with this project may be subject to their own licenses, which may be provided alongside those specific games or content. Some games may not have their licenses included with them, in which case, you may need to find the appropriate license information separately. InfinityLoop and the InfinityGamer organization do not claim ownership of any games or game-related content included in this project unless stated.
+**Note:** Any files and directories in the "/games/files/" directory, or any games or game-related content associated with this project may be subject to their own licenses, which may be provided alongside those specific games or content. Some games may not have their licenses included with them, in which case, you may need to find the appropriate license information separately. InfinityLoop and the InfinityGamer organization do not claim ownership of any games or game-related content included in this project unless explicitly stated.
 
 **Additional Clause:** The original authors, InfinityLoop and the InfinityGamer organization, retain the right to use the work for commercial purposes, including but not limited to monetizing content, advertising, and selling products or services related to the work.
 
