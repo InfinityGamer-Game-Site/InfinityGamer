@@ -1,6 +1,6 @@
 # InfinityGamer
 
-<img src="assets/images/logo.svg" style="width: 300px; height: auto; float: right;">
+<img src="static/assets/images/logo.svg" style="width: 300px; height: auto; float: right;">
 
 Infinite fun, unblocked!
 A new game site with over 390 games, many alternate links, and much more!
@@ -8,6 +8,8 @@ A new game site with over 390 games, many alternate links, and much more!
 ## Deployment
 
 If you want to deploy this game site for an alt link, please remember that this is a VERY BIG repository. It will take some time to deploy.
+
+Make sure to make the root directory /static/.
 
 ### Deploy Links
 
