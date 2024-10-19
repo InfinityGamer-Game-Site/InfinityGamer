@@ -35,7 +35,7 @@ function sourceView() {
     const goNowButton = document.createElement('a');
     goNowButton.textContent = "Yes, I'm sure";
     goNowButton.onclick = function() {
-        window.location.href = "files/" + searchParam + "/index.html"; 
+        window.location.href = "source/" + searchParam + "/index.html"; 
     };
     goNowButton.style.fontSize = "50%";
     goNowButton.style.textDecoration = "underline";
@@ -99,7 +99,7 @@ function downloadGame(gameName) {
       registration.active.postMessage({
         type: 'ADD_TO_CACHE',
         urls: [
-          `games/files/${gameName}/`
+          `games/source/${gameName}/`
         ] // Replace with the correct URLs relative to the root
       });
     });

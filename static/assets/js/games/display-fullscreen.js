@@ -5,7 +5,7 @@ const searchParam = urlParams.get("g");
 
 if (searchParam) {
   let title = toTitleCase(searchParam.replace(/-/g, " "));
-  document.getElementById("gameFrame").src = "files/" + searchParam + "/index.html";
+  document.getElementById("gameFrame").src = "source/" + searchParam + "/index.html";
   const savedTitle = localStorage.getItem("title");
 
   if (savedTitle) {
@@ -19,13 +19,13 @@ if (searchParam) {
     popup.innerHTML = '<h2>This game needs source view to work!</h2> <br> <p>Unfortunately, play time can not be counted in source view</p> <br> <p>Redirecting you in 5 seconds...</p>';
     const goNowButton = document.createElement('button');
     goNowButton.textContent = "Go now";
-    goNowButton.onclick = "window.location.href = files/" + searchParam + "/index.html"
+    goNowButton.onclick = "window.location.href = source/" + searchParam + "/index.html"
     document.body.appendChild(popup);
     popup.appendChild(document.createElement('br'));
     popup.appendChild(document.createElement('br'));
     popup.appendChild(goNowButton);
     setTimeout(function() {
-      window.location.href = "files/" + searchParam + "/index.html";
+      window.location.href = "source/" + searchParam + "/index.html";
   }, 5000);
   }
 }
