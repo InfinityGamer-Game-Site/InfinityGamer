@@ -1,1 +1,0 @@
-changeWorldType(2);

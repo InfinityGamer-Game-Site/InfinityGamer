@@ -1,2 +1,0 @@
-# Stickman-Hook
-The Game
