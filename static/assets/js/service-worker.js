@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'my-site-cache-v17';
+const CACHE_NAME = 'my-site-cache-v19';
 let urlsToCache = [
   'index.html',
   'games/index.html',
