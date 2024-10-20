@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: 'output',
+    prefix: 'output/',
     bare:'https://skibzy.global.ssl.fastly.net/bear/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
