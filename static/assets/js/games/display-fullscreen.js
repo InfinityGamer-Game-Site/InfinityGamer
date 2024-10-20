@@ -5,7 +5,7 @@ const searchParam = urlParams.get("g");
 
 if (searchParam) {
   let title = toTitleCase(searchParam.replace(/-/g, " "));
-  document.getElementById("gameFrame").src = "../assets/prxx/embed.html#https://rawcdn.githack.com/InfinityGamer-Game-Site/assets/main/" + searchParam + "/index.html";
+  document.getElementById("gameFrame").src = "https://ig-prxx-backend.pages.dev/index.html#https://rawcdn.githack.com/InfinityGamer-Game-Site/assets/main/" + searchParam + "/index.html";
   const savedTitle = localStorage.getItem("title");
 
   if (savedTitle) {
