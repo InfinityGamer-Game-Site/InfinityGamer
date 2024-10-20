@@ -10,20 +10,6 @@ function reloadIframe() {
 var reloadButton = document.getElementById('reloadButton');
 reloadButton.addEventListener('click', reloadIframe);
 
-function shareGame() {
-navigator.clipboard.writeText(window.location.href)
-  .then(() => {
-    console.log("Text copied successfully!");
-  })
-  .catch((err) => {
-    console.error("Error copying text:", err);
-  });
-
-}
-
-var shareButton = document.getElementById('shareButton');
-shareButton.addEventListener('click', shareGame);
-
 function fullscreen() {
   redirect("fullscreen.html?g=" + searchParam);
 }
